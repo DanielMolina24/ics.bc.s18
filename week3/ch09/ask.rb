@@ -8,13 +8,11 @@ return true
 else
       return false
 end
-break
-else
+elsif
       puts 'Please answer "yes" or "no".'
     end
   end
 
-answer
 end
 puts 'Hello, and thank you for...'
 puts
