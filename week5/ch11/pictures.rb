@@ -1,18 +1,17 @@
 ### In this next line you want to give it the file path of where you want the
 ###  pictures moved. I recommend using an absolute filepath.
-###
+
 ### An example for mac could be '/Users/username/Desktop/pic_dst'
 ### An example for PC could be 'C:/Users/username/Desktop/pic_dst'
-Dir.chdir '<destination>'
+Dir.chdir '</Users/danielmolina/Desktop>'
 
 # First we find all of the pictures to be moved.
 ### In the next line you want the source
 ### Note the '/*.jpg' at the end, this is going to grab anything in the
 ###  final folder that ends in '.jpg' and stash it in an array.
-###
 ### An example for mac could be '/Users/username/Desktop/pic_src/**/*.{JPG,jpg}'
 ### An example for PC could be 'C:/Users/username/Desktop/pic_src/**/*.{JPG,jpg}'
-pic_names = Dir['<source>']
+pic_names = Dir['</Users/danielmolina/Desktop/**/*{jpg}>']
 
 puts 'What would you like to call this batch?'
 batch_name = gets.chomp
